@@ -10,7 +10,7 @@ const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const {setAToken, backendUrl} = useContext(AdminContext)
-    const {setDtoken}=useContext(DoctorContext)
+    const {setDToken}=useContext(DoctorContext)
 
     const navigate = useNavigate()
 

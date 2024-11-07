@@ -49,7 +49,7 @@ const loginDoctor = async (req, res) => {
       return res.status(400).json({ success: false, message: "Invalid credentials" });
     }
     const token = jwt.sign({ id: doctor._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
-    res.json({ success: true, token });
+    res.json({ success: true,message:"Login Successful", token });
   } catch (error) {
     console.log(error);
     res.status(500).json({ success: false, message: error.message });
