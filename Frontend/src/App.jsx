@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Chatbot from "./pages/Chatbot";
+import Chatbot from "./components/Chatbot";
 
 export default function App() {
   return (
